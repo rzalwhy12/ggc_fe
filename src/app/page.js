@@ -9,22 +9,26 @@ import Footer from "@/components/ui/footer";
 
 export default function Home() {
   return (
-    <div>
-      <section id="tentang">
-        <HeroSection />
-      </section>
-      <section id="about">
-        <AboutSection />
-      </section>
-      <section id="proyek1">
-        <FindPlace />
-      </section>
-      <section id="callout">
-        <CallOut />
-      </section>
-      <section id="testimoni">
-        <Testimoni />
-      </section>
-    </div>
+    <>
+      <Navbar />
+      <div>
+        <section id="tentang">
+          <HeroSection />
+        </section>
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="proyek1">
+          <FindPlace />
+        </section>
+        <section id="callout">
+          <CallOut />
+        </section>
+        <section id="testimoni">
+          <Testimoni />
+        </section>
+      </div>
+      <Footer />
+    </>
   );
 }
